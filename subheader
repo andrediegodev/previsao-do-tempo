@@ -1,0 +1,3 @@
+  <div class="subHeader">
+        <a href="javascript:void(0)" class="infoSubHeader" onclick="buscarPorLocalizacao()">Ative sua localização</a>
+    </div>

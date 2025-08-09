@@ -1,0 +1,551 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #050a30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    background-color: #ffffff0f;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 90%;
+    max-width: 95%;
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    flex: 1 1 150px;
+    background: #8000f1;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    
+}
+
+.title-box {
+    color: #f0f4f8;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    min-width: 120px;
+    flex: 1; /* cresce mas mantém mínimo */
+    background: #a020f0;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    text-align: center;
+}
+
+#details ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center; /* centraliza as boxes */
+    padding: 0;
+    margin: 0;
+    list-style: none; /* remove bolinhas */
+}
+
+#prev {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+
+.previsaoTempo{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 1rem;
+    margin-top: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+}
+
+.fa-location-dot{
+    color: #8000f1;
+    transform: translateX(-10px);
+}
+
+.iconeCondicao{
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.localizacaoBody {
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    flex: 1;
+    cursor: pointer;
+    color: #fff;
+    background-color: #f0f4f8;
+    color: #8000f1;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.condicaoBody {
+    font-size: 1.4rem;
+    line-height: 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+#details{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+
+}
+
+.logo {
+    display: flex;
+    position: absolute;
+    font-size: 3rem;
+    margin-left: 20rem;
+    padding-top: 2rem;
+    cursor: pointer;
+}
+
+#pesquisaCidade {
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6fc29;
+    color: #f0f4f8;
+    border: none;
+    border-radius: 0.5rem;
+    padding-left: 1.5rem;
+    width: 50rem;
+    height: 3.7rem;
+    cursor: pointer;
+}
+
+.search{
+    width: 10rem;
+    height: 3.7rem;
+    color: #ffffff;
+    background-color: #8000f1;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.search:hover{
+    transition: 400ms;
+    color: #8000f1;
+    background-color: #050a30;
+    border: 2px solid;
+}
+
+.pesquisa{
+    display: flex;
+    width: 70%;
+    gap: 0.5rem;
+}
+
+#pesquisaCidade{
+    flex: 1;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+#pesquisaCidade:hover{
+    background-color: #050a30;
+}
+
+#sugestoes {
+    list-style: none;
+    margin-top: 6rem;
+    max-height: 300px;
+    overflow-y: auto;
+    position: absolute;
+    background: #050a30;
+    z-index: 1000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    width: 50.2rem;
+    border-radius: 0.5rem;
+    margin-left: -11.5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+#sugestoes ul{
+    width: 35rem;
+}
+
+#sugestoes li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+#sugestoes li:hover {
+    background: #fff;
+    color: #050a30;
+}
+
+input::placeholder {
+    color: #ffffff90;
+    font-size: 1.5rem;
+    opacity: 1;
+}
+
+.subHeader {
+    background-color: #233dff;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+}
+
+.infoSubHeader {
+    color: #f0f4f8;
+    font-weight: 300;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin: 0.3rem 3rem;
+}
+
+
+
+.sensacaoT {
+    width: 15rem;
+    height: 9rem;
+    background-color: #8000f1;
+    border-radius: 1.5rem;
+}
+
+.precipitacao {
+    width: 15rem;
+    height: 9rem;
+    background-color: #8000f1;
+    border-radius: 1rem;
+}
+
+.umidade {
+    width: 15rem;
+    height: 9rem;
+    background-color: #8000f1;
+    border-radius: 1rem;
+}
+
+.vento {
+    width: 15rem;
+    height: 9rem;
+    background-color: #8000f1;
+    border-radius: 1rem;
+}
+
+.lua {
+    width: 15rem;
+    height: 9rem;
+    background-color: #8000f1;
+    border-radius: 1rem;
+}
+
+.raiosUV {
+    width: 15rem;
+    height: 9rem;
+    background-color: #8000f1;
+    border-radius: 1rem;
+}
+
+.preenchimentoBarra{
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #2bfa4a, #efe524, #ce260d); /* verde ao vermelho */
+    transition: width 0.3s ease;
+}
+
+
+
+.conteudoSensacao {
+    color: #f0f4f8;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    display: none;
+}
+
+.temperatura{
+    font-size: 7rem;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.fa-temperature-three-quarters {
+    font-weight: 400;
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    margin: 2.5rem 0 0 8.4rem;
+    color: #ffffff76;
+    display: none;
+}
+
+
+
+.precipitacaoValor {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: center;
+    position: relative;
+}
+
+.conteudoPrecipitacao {
+    color: #f0f4f8;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    margin-left: 2rem;
+    display: none;
+}
+
+.fa-cloud-showers-heavy {
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #ffffff76;
+    display: none;
+}
+
+.precipitacaoValor i {
+    top: 0;
+    right: 0;
+    transform: translate(50%, -70%);
+}
+
+.elemento1 {
+    font-family: 'Poppins', sans-serif;
+    color: #f0f4f8;
+    font-size: 1.4rem;
+    display: none;
+}
+
+
+.umidadeValor {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: center;
+}
+
+.conteudoUmidade {
+    color: #f0f4f8;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    display: none;
+}
+
+.elemento2 {
+    font-family: 'Poppins', sans-serif;
+    color: #f0f4f8;
+    font-size: 1.4rem;
+    display: none;
+}
+
+
+.ventoValor {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: center;
+}
+
+.conteudoVento {
+    color: #f0f4f8;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    display: none;
+}
+
+.elementoVento {
+    font-family: 'Poppins', sans-serif;
+    color: #f0f4f8;
+    font-size: 1.4rem;
+}
+
+.luaValor {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: center;
+}
+
+
+.conteudoLua {
+    color: #f0f4f8;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    display: none;
+}
+
+.containerRaiosUV {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.conteudoRaiosUV {
+    color: #f0f4f8;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.conteudoRaiosUV2 {
+    color: #f0f4f8;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.raiosValor {
+    width: 7rem;
+    height: 0.8rem;
+    border: #f0f4f8 1px solid;
+    border-radius: 1rem;
+    display: inline;
+}
+
+.bi-sun-fill{
+    color: #efe524;
+}
+
+.bi-moon-fill{
+    color: #f0f4f8;
+}
+
+
+/* Responsivo: Tablet */
+@media (max-width: 768px) {
+    main{
+        width: 80%;
+    }
+    .pesquisa{
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    #pesquisaCidade{
+        height: 2.5rem;
+        font-size: 1rem;
+        padding: 0 0 0.5rem 0.5rem;
+    }
+    .search{
+        width: 5rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+    #prev{
+        width: 20rem;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    .title-box{
+        padding: 0;
+        font-size: 0.85rem;
+    }
+    .conteudoSensacao{
+        font-size: 3rem;
+    }
+    .fa-temperature-three-quarters{
+        font-size: 1.5rem;
+
+    }
+    .conteudoPrecipitacao{
+        font-size: 3rem;
+    }
+    .fa-cloud-showers-heavy{
+        font-size: 1.5rem;
+    }
+    .conteudoUmidade{
+        font-size: 3rem;
+    }
+    .conteudoVento{
+        font-size: 3rem;
+    }
+    .conteudoLua{
+        font-size: 1.5rem;
+    }
+    .containerRaiosUV{
+        font-size: 1.5rem;
+    }
+    .localizacaoBody{
+        font-size: .8rem;
+        padding-bottom: .3rem;
+        line-height: 12px;
+    }
+    .previsaoTempo{
+        margin: 0;
+    }
+    .iconeCondicao{
+        font-size: 1rem;
+    }
+    input::placeholder {
+    color: #ffffff90;
+    font-size: 0.8rem;
+    opacity: 1;
+}
+}
+
+/* Responsivo: Celular */
+@media (max-width: 480px) {
+    .iconeCondicao {
+        font-size: 3rem;
+    }
+    .temperatura {
+        font-size: 2.2rem;
+    }
+    .item {
+        font-size: 0.9rem;
+    }
+}
